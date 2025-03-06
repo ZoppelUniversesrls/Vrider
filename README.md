@@ -5,9 +5,9 @@
 ## Project Structure
 
 - `contracts/`: Contains the Solidity contracts.
-  - `ArtifactGenerator.sol`: An ERC721-based contract that allows controlled minting and transferring of NFTs.
+  - `AssetGenerator.sol`: An ERC721-based contract that allows controlled minting and transferring of NFTs.
 - `test/`: Contains the test scripts.
-  - `ArtifactGenerator.js`: JavaScript tests for the ArtifactGenerator contract.
+  - `AssetGenerator.js`: JavaScript tests for the AssetGenerator contract.
 
 
 ## Prerequisites
@@ -49,7 +49,7 @@ npx hardhat test
 
 The test suites cover the following functionalities:
   
-- ArtifactGenerator:
+- AssetGenerator:
   - Correct roles assigned on deployment (DEFAULT_ADMIN_ROLE, MINTER_ROLE, ADMIN_ROLE, MARKETPLACE_ROLE)
   - Minter can mint multiple NFTs
   - User cannot mint without minter role
@@ -67,11 +67,11 @@ The test suites cover the following functionalities:
   - Contract distributes sFUEL when conceding MINTER_ROLE if balance is low
   - Owner can update ETH amount correctly
 
-### ArtifactGenerator Contract
+### AssetGenerator Contract
 
-The ArtifactGenerator contract is an ERC-721 token with the following features:
+The AssetGenerator contract is an ERC-721 token with the following features:
 
-- Name: ArtifactGenerator
+- Name: AssetGenerator
 - Symbol: ARTF
 - Role-Based Access Control: Uses AccessControl to manage roles such as DEFAULT_ADMIN_ROLE, MINTER_ROLE, and MARKETPLACE_ROLE.
 - Minting: Allows authorized minters to create new NFTs with associated metadata URIs.

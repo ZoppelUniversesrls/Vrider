@@ -11,11 +11,11 @@ import {ERC721URIStorage} from "@openzeppelin/contracts/token/ERC721/extensions/
 
 
 /**
- * @title ArtifactGenerator
+ * @title AssetGenerator
  * @dev An ERC721-based contract that allows controlled minting and transferring of NFTs.
  *      Supports enumerable and URI storage extensions. Includes role-based access control.
  */
-contract ArtifactGenerator is IERC165, ERC721Enumerable, ERC721URIStorage, AccessControl {
+contract AssetGenerator is IERC165, ERC721Enumerable, ERC721URIStorage, AccessControl {
 
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
     
